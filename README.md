@@ -15,7 +15,7 @@ ChatterBox est une application web permettant aux utilisateurs de communiquer en
 - Possibilité de **rejoindre ou quitter** des salles de discussion.
 
 ### 🔒 Messagerie en temps réel
-- **Envoi et réception** de messages en temps réel avec des notifications pour les nouveaux messages.
+- **Envoi et réception** de messages en temps réel 
 - **Historique des messages** enregistré dans une base de données.
 
 ### 🔄 Interface utilisateur intuitive
@@ -33,14 +33,14 @@ ChatterBox est une application web permettant aux utilisateurs de communiquer en
 ## 🔧 Architecture Logicielle
 L'application est composée de :
 
-- **Backend** : Node.js avec Express.js
+- **Backend** : Spring Boot 
 - **Frontend** : React.js
 - **Base de données** : MongoDB
 
 ## 🔍 Prérequis
-1. **Git** : Assurez-vous que Git est installé. Sinon, téléchargez-le depuis [git-scm.com](https://git-scm.com).
-2. **Node.js** : Installez Node.js depuis [nodejs.org](https://nodejs.org).
-3. **MongoDB** : Assurez-vous que MongoDB est installé et fonctionne sur le port par défaut 27017.
+1. **Git** : 
+2. **Node.js** : 
+
 
 ## 🛠‟ Installation
 
@@ -63,7 +63,7 @@ Assurez-vous que le service MongoDB est démarré.
 
 ## 🏢 Accès à l'application
 - **Frontend** : [http://localhost:3000](http://localhost:3000)
-- **Backend API** : [http://localhost:5000](http://localhost:5000)
+- **Backend API** : [http://localhost:8080](http://localhost:8080)
 
 ## 🌐 Fonctionnalités Techniques
 
@@ -89,31 +89,15 @@ Assurez-vous que le service MongoDB est démarré.
 - **React.js** pour une interface utilisateur dynamique.
 - **Axios** pour les appels API.
 - **Socket.IO Client** pour la communication en temps réel.
-
-## 🏠 Docker
-
-### Docker Compose
-```yaml
-version: '3.8'
-
-services:
-  mongodb:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongodb_data:/data/db
-
   backend:
+
+https://github.com/user-attachments/assets/44e5ed67-c652-4355-a82a-50dec10394c9
+
+
     build:
       context: ./backend
     ports:
       - "5000:5000"
-    depends_on:
-      - mongodb
-    environment:
-      MONGO_URI: mongodb://mongodb:27017/chatterbox
-
   frontend:
     build:
       context: ./frontend
@@ -127,6 +111,8 @@ volumes:
 ```
 
 ## 👥 Contributeurs
-- Abdelbasset Zaggabi
-- Collaborateurs bienvenus : [Lien GitHub](https://github.com/ton_projet_chatterbox)
+- Salim Wissal
+-
+  
+
 
