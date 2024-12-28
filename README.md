@@ -58,8 +58,7 @@ npm install
 npm start
 ```
 
-### Lancer MongoDB
-Assurez-vous que le service MongoDB est démarré.
+
 
 ## 🏢 Accès à l'application
 - **Frontend** : [http://localhost:3000](http://localhost:3000)
