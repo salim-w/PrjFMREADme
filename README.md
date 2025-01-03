@@ -35,7 +35,7 @@ L'application est composée de :
 
 - **Backend** : Spring Boot 
 - **Frontend** : React.js
-- **Base de données** : MongoDB
+- **Base de données** : H2
 
 ## 🔍 Prérequis
 1. **Git** : 
@@ -69,7 +69,7 @@ npm start
 ### Backend
 - **Node.js** avec **Express.js** pour les APIs REST.
 - **Socket.IO** pour la messagerie en temps réel.
-- **MongoDB** comme base de données.
+- **H2** comme base de données.
 
 #### Exemple de dépendances
 ```json
@@ -105,9 +105,7 @@ https://github.com/user-attachments/assets/44e5ed67-c652-4355-a82a-50dec10394c9
     depends_on:
       - backend
 
-volumes:
-  mongodb_data:
-```
+
 
 ## 👥 Contributeurs
 - Salim Wissal
